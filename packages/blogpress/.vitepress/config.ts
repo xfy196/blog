@@ -24,7 +24,7 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇公众号👇---👇 微信 👇' },
       {
         type: 'image',
-        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210'
+        src: 'https://cdn.jsdelivr.net/gh/xfy196/images@main/202308111811152.png'
       },
       {
         type: 'text',
