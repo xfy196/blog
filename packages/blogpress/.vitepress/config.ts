@@ -116,7 +116,7 @@ export default defineConfig({
       // provider: "local"
       options: {
         appId: '5TAHXOHU34',
-        apiKey: '96040fed07f2e7c821444fe540dd19a9',
+        apiKey: 'd7d7070297dca2a0427d58088171f3f7',
         indexName: 'xxytime_top',
         placeholder: '请输入要搜索的内容...'
       }
