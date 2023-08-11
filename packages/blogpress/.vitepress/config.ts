@@ -1,13 +1,13 @@
 import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
 import themePkg from '@sugarat/theme/package.json'
-import { SearchPlugin } from '@pzy915/vitepress-plugin-search'
+// import { SearchPlugin } from '@pzy915/vitepress-plugin-search'
 
-var options = {
-  previewLength: 20,
-  buttonLabel: '搜索',
-  placeholder: '文章搜索',
-  tokenize: 'full'
-}
+// var options = {
+//   previewLength: 20,
+//   buttonLabel: '搜索',
+//   placeholder: '文章搜索',
+//   tokenize: 'full'
+// }
 
 const blogTheme = getThemeConfig({
   author: '小小荧',
@@ -112,7 +112,7 @@ export default defineConfig({
     ...extraHead
   ],
   vite: {
-    plugins: [SearchPlugin(options)],
+    // plugins: [SearchPlugin(options)],
     server: {
       port: 4000,
       host: '0.0.0.0'
@@ -120,16 +120,21 @@ export default defineConfig({
   },
   lastUpdated: true,
   themeConfig: {
-    // search: {
-    //   provider: 'algolia',
-    //   // provider: "local"
-    //   options: {
-    //     appId: '5TAHXOHU34',
-    //     apiKey: 'd7d7070297dca2a0427d58088171f3f7',
-    //     indexName: 'xxytime_top',
-    //     placeholder: '请输入要搜索的内容...'
-    //   }
-    // },
+    search: {
+      provider: 'algolia',
+      // provider: "local"
+      options: {
+        appId: '5TAHXOHU34',
+        apiKey: '66a06ba59005e2a1188f482cb9092589',
+        indexName: 'xxytime_top',
+        placeholder: '请输入关键词',
+        translations: {
+          button: {
+            buttonText: '搜索文档'
+          }
+        }
+      }
+    },
     lastUpdatedText: '上次更新于',
     footer: {
       message:
