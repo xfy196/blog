@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
     "paths": {
       "@sugarat/theme/node": ["./node"],
-      "小小荧": ["src/index.ts"]
+      "@sugarat/theme": ["src/index.ts"]
     }
   },
   "include": ["src", "types", "docs/.vitepress/*.ts"],
