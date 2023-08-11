@@ -1,4 +1,13 @@
-###### 实现
+---
+title: 如何实现一个简单版本的webpack打包
+date: 2022-03-04
+tags:
+  - Node
+categories:
+  - 后端
+---
+
+# 如何实现一个简单版本的 webpack 打包
 
 > 涉及到`ES6`转`ES5`,所以我们首先需要安装一些`Babel`相关的工具
 
@@ -71,7 +80,7 @@ function getDependencies(entry) {
     // 获得文件目录
     const dirname = path.dirname(asset.filePath)
     // 遍历当前文件依赖关系
-    asset.dependencies.forEach(relativePath => {
+    asset.dependencies.forEach((relativePath) => {
       // 获得绝对路径
       const absolutePath = path.join(dirname, relativePath)
       // CSS 文件逻辑就是将代码插入到 `style` 标签中
@@ -121,7 +130,7 @@ function bundle(dependencies, entry) {
   let modules = ''
   // 构建函数参数，生成的结构为
   // { './entry.js': function(module, exports, require) { 代码 } }
-  dependencies.forEach(dep => {
+  dependencies.forEach((dep) => {
     const filePath = dep.relativePath || entry
     modules += `'${filePath}': (
       function (module, exports, require) { ${dep.code} }
@@ -147,10 +156,10 @@ function bundle(dependencies, entry) {
 
 ```js
 // entry.js
-import message from "./message.js"
+import message from './message.js'
 console.log(message)
 // message.js
-import {word} from "./word.js"
+import { word } from './word.js'
 const message = `say ${word}`
 export default message
 // word.js
@@ -159,16 +168,16 @@ export const word = 'hello'
 
 > `Babel`将我们`ES6`的模块化转换为了`CommonJS`的代码，但是浏览器不支持`CommonJS`的，所以如果这段代码需要在浏览器环境下运行的话，我们需要自己实现`CommonJS`相关代码，这就是`bundle`函数做的大部分事情
 
-###### 接下来我们在逐行解析bundle函数
+###### 接下来我们在逐行解析 bundle 函数
 
 - 首先遍历所有依赖文件，构建一个函数参数对象
 
 - 对象的属性就是当前文件的相对路径，属性值是一个函数，函数体是当前文件下的代码，函数接收三个参数`module`、`exports`、`require`
-  
+
   - `module`参数对应`CommonJS`中的`module`
-  
+
   - `exports`参数对应`CommonJS`中的`module.export`
-  
+
   - `require`参数对应我们自己创建的`require`函数
 
 - 接下来就是构造一个使用参数的函数了，函数做的事情很简单，就是内部创建一个`require`函数，然后调用`require(entry)`，也就是`require('./src/entry.js')`，这样就会从函数参数中找到`./entry.js`对应的函数并执行，最后将导出的内容通过`module.export`的方式外部获取到
@@ -178,54 +187,52 @@ export const word = 'hello'
 > 如果你对于上面的实现还有疑惑的话，可以阅读下打包的部分简化代码
 
 ```js
-(function (modules) {
+;(function (modules) {
   function require(id) {
-    const module = { exports: {} };
-    modules[id](module, module.exports, require);
-    return module.exports;
+    const module = { exports: {} }
+    modules[id](module, module.exports, require)
+    return module.exports
   }
-  require("./src/index.js");
+  require('./src/index.js')
 })({
-  "./src/index.js": function (module, exports, require) {
-    "use strict";
+  './src/index.js': function (module, exports, require) {
+    'use strict'
 
-    var _message = require("./message.js");
+    var _message = require('./message.js')
 
-    var _message2 = _interopRequireDefault(_message);
+    var _message2 = _interopRequireDefault(_message)
 
     function _interopRequireDefault(obj) {
-      return obj && obj.__esModule ? obj : { default: obj };
+      return obj && obj.__esModule ? obj : { default: obj }
     }
 
-    console.log(_message2.default);
+    console.log(_message2.default)
   },
-  "./message.js": function (module, exports, require) {
-    "use strict";
+  './message.js': function (module, exports, require) {
+    'use strict'
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true,
-    });
+    Object.defineProperty(exports, '__esModule', {
+      value: true
+    })
 
-    var _word = require("./word.js");
+    var _word = require('./word.js')
 
-    var message = "say " + _word.word;
-    exports.default = message;
+    var message = 'say ' + _word.word
+    exports.default = message
   },
-  "./word.js": function (module, exports, require) {
-    "use strict";
+  './word.js': function (module, exports, require) {
+    'use strict'
 
-    Object.defineProperty(exports, "__esModule", {
-      value: true,
-    });
-    var word = (exports.word = "hello");
-  },
-});
+    Object.defineProperty(exports, '__esModule', {
+      value: true
+    })
+    var word = (exports.word = 'hello')
+  }
+})
 ```
 
-> 虽然实现这个工具写了不到100行代码，但是打包工具的核心原理就是这些
+> 虽然实现这个工具写了不到 100 行代码，但是打包工具的核心原理就是这些
 
 - 找出入口文件所有的依赖关系
 
 - 然后通过构建`CommonJS`代码来获取`exports`导出的内容
-
-
