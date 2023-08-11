@@ -1,4 +1,4 @@
-import type { Theme } from '小小荧'
+import type { Theme } from '@sugarat/theme'
 import { getThemeConfig } from '@sugarat/theme/node'
 
 export const workConfig: Theme.UserWorks = {
