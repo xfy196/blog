@@ -87,7 +87,7 @@ const extraHead: any =
 export default defineConfig({
   extends: blogTheme,
   ignoreDeadLinks: true,
-  // lang: 'zh-CN',
+  lang: 'zh-CN',
   title: '小小荧',
   description:
     '小小荧的个人博客，记录随笔与学习笔记，大前端相关的知识，高频面试题，个人面经等',
