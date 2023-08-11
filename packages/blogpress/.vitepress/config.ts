@@ -111,16 +111,16 @@ export default defineConfig({
   },
   lastUpdated: true,
   themeConfig: {
-    search: {
-      provider: 'algolia',
-      // provider: "local"
-      options: {
-        appId: '5TAHXOHU34',
-        apiKey: 'd7d7070297dca2a0427d58088171f3f7',
-        indexName: 'xxytime_top',
-        placeholder: '请输入要搜索的内容...'
-      }
-    },
+    // search: {
+    //   provider: 'algolia',
+    //   // provider: "local"
+    //   options: {
+    //     appId: '5TAHXOHU34',
+    //     apiKey: 'd7d7070297dca2a0427d58088171f3f7',
+    //     indexName: 'xxytime_top',
+    //     placeholder: '请输入要搜索的内容...'
+    //   }
+    // },
     lastUpdatedText: '上次更新于',
     footer: {
       message:
