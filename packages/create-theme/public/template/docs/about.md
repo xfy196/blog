@@ -59,7 +59,7 @@ sticky: 1
 
 - 主题地址：https://www.xxytime.top/
 - 主题包：[小小荧](https://www.npmjs.com/package/小小荧)
-- 项目地址：https://github.com/ATQQ/sugar-blog/tree/master/packages/theme
+- 项目地址：https://github.com/xfy196/blog/tree/master/packages/theme
 - 作者博客地址：https://sugarat.top
 
 ## 最后

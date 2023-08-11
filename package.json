@@ -39,13 +39,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ATQQ/sugar-blog.git"
+    "url": "git+https://github.com/xfy196/blog.git"
   },
   "keywords": [],
   "author": "sugar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ATQQ/sugar-blog/issues"
+    "url": "https://github.com/xfy196/blog/issues"
   },
-  "homepage": "https://github.com/ATQQ/sugar-blog#readme"
+  "homepage": "https://github.com/xfy196/blog#readme"
 }

@@ -1,7 +1,7 @@
 {
   "0 debug pnpm:scope": {
     "selected": 1,
-    "workspacePrefix": "/Users/xufuying/Desktop/projects/sugar-blog"
+    "workspacePrefix": "/Users/xufuying/Desktop/projects/blog"
   },
   "1 error pnpm": {
     "errno": 1,

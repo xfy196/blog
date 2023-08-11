@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ATQQ/sugar-blog.git"
+    "url": "git+https://github.com/xfy196/blog.git"
   },
   "keywords": [
     "vitepress",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "homepage": "https://theme.sugarat.top",
   "bugs": {
-    "url": "https://github.com/ATQQ/sugar-blog/issues"
+    "url": "https://github.com/xfy196/blog/issues"
   },
   "scripts": {
     "dev": "npm run build:node && npm run dev:docs",

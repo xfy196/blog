@@ -291,7 +291,7 @@ date: 2023-01-08 20:00:00
 
 ![图片](https://img.cdn.sugarat.top/mdImg/MTY3MzE4MzIxNzEwOQ==673183217109)
 
-展示规则，实现代码见：[packages/theme/src/utils/index.ts](https://github.com/ATQQ/sugar-blog/blob/1758bffebd8529dbec860f531de126410a422795/packages/theme/src/utils/index.ts#L41-L64)
+展示规则，实现代码见：[packages/theme/src/utils/index.ts](https://github.com/xfy196/blog/blob/1758bffebd8529dbec860f531de126410a422795/packages/theme/src/utils/index.ts#L41-L64)
 
 - 小于 1 分钟：xx 秒前
 - 小于 1 小时：xx 分钟前

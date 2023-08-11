@@ -320,4 +320,4 @@ interface SearchConfig {
 - [pagefind](https://github.com/cloudcannon/pagefind)
 - [vitepress-plugin-search](https://github.com/emersonbottero/vitepress-plugin-search)
 - [vue-command-palette](https://github.com/xiaoluoboding/vue-command-palette)
-- [小小荧](https://github.com/ATQQ/sugar-blog/tree/master/packages/theme)
+- [小小荧](https://github.com/xfy196/blog/tree/master/packages/theme)

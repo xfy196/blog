@@ -13,8 +13,8 @@ export const workConfig: Theme.UserWorks = {
         start: '2023/01/29'
       },
       github: {
-        owner: 'ATQQ',
-        repo: 'sugar-blog',
+        owner: 'xfy196',
+        repo: 'blog',
         branch: 'master',
         path: 'packages/theme'
       },
@@ -40,7 +40,7 @@ export const workConfig: Theme.UserWorks = {
         start: '2019/03/27'
       },
       github: {
-        owner: 'ATQQ',
+        owner: 'xfy196',
         repo: 'easypicker2-client',
         branch: 'main'
       },
@@ -65,14 +65,14 @@ export const workConfig: Theme.UserWorks = {
       time: {
         start: '2020/02/18'
       },
-      github: 'https://github.com/ATQQ/sugar-blog',
+      github: 'https://github.com/xfy196/blog',
       url: 'https://sugarat.top',
       tags: ['Vitepress', 'Vue'],
       cover:
         'https://img.cdn.sugarat.top/mdImg/MTY3MzE3MDUxOTMwMw==673170519303',
       links: [
         { title: '掘金', url: 'https://juejin.cn/user/1028798615918983' },
-        { title: 'GitHub主页', url: 'https://github.com/ATQQ' }
+        { title: 'GitHub主页', url: 'https://github.com/xfy196' }
       ]
     },
     {
@@ -86,7 +86,7 @@ export const workConfig: Theme.UserWorks = {
         type: 'danger'
       },
       top: 1,
-      github: 'https://github.com/ATQQ/sugar-blog',
+      github: 'https://github.com/xfy196/blog',
       url: 'https://sugarat.top',
       tags: ['Vitepress', 'Vue'],
       cover: [
@@ -100,7 +100,7 @@ export const workConfig: Theme.UserWorks = {
       ],
       links: [
         { title: '掘金', url: 'https://juejin.cn/user/1028798615918983' },
-        { title: 'GitHub主页', url: 'https://github.com/ATQQ' }
+        { title: 'GitHub主页', url: 'https://github.com/xfy196' }
       ]
     },
     {
@@ -114,7 +114,7 @@ export const workConfig: Theme.UserWorks = {
         type: 'tip'
       },
       top: 2,
-      github: 'https://github.com/ATQQ/sugar-blog',
+      github: 'https://github.com/xfy196/blog',
       tags: ['Vitepress'],
       cover: {
         urls: [
@@ -160,7 +160,7 @@ export const blogTheme = getThemeConfig({
   author: '小小荧',
   // 评论
   comment: {
-    repo: 'ATQQ/sugar-blog',
+    repo: 'xfy196/blog',
     repoId: 'MDEwOlJlcG9zaXRvcnkyNDEyNDUyOTk',
     category: 'Announcements',
     categoryId: 'DIC_kwDODmEcc84COVc6',

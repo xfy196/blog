@@ -19,7 +19,7 @@ sidebar: false
 
 ## 快速创建项目
 
-使用 [@sugarat/create-theme](https://github.com/ATQQ/sugar-blog/tree/master/packages/create-theme) 快速创建模板项目
+使用 [@sugarat/create-theme](https://github.com/xfy196/blog/tree/master/packages/create-theme) 快速创建模板项目
 
 :::code-group
 

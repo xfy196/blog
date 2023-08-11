@@ -130,7 +130,7 @@ export default defineConfig({
     logo: '/logo.png',
     editLink: {
       pattern:
-        'https://github.com/ATQQ/sugar-blog/tree/master/packages/blogpress/:path',
+        'https://github.com/xfy196/blog/tree/master/packages/blogpress/:path',
       text: '去 GitHub 上编辑内容'
     },
     nav: [
@@ -169,8 +169,6 @@ export default defineConfig({
         activeMatch: '^/summarize'
       }
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/ATQQ/sugar-blog' }
-    ]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/xfy196/blog' }]
   }
 })

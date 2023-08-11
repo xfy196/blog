@@ -7,9 +7,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ATQQ/sugar-blog.git"
+    "url": "git+https://github.com/xfy196/blog.git"
   },
-  "homepage": "https://github.com/ATQQ/sugar-blog/tree/master/packages/create-theme",
+  "homepage": "https://github.com/xfy196/blog/tree/master/packages/create-theme",
   "scripts": {
     "dev": "tsup --watch --publicDir",
     "build": "tsup --minify --publicDir"

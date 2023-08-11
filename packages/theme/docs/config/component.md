@@ -175,8 +175,8 @@ const blogTheme = getThemeConfig({
           start: '2023/01/29'
         },
         github: {
-          owner: 'ATQQ',
-          repo: 'sugar-blog',
+          owner: 'xfy196',
+          repo: 'blog',
           branch: 'master',
           path: 'packages/theme'
         },

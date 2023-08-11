@@ -28,13 +28,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ATQQ/sugar-blog.git"
+    "url": "git+https://github.com/xfy196/blog.git"
   },
   "author": "sugar",
   "license": "MIT",
-  "homepage": "https://github.com/ATQQ/sugar-blog/tree/master/packages/vitepress-plugin-pagefind",
+  "homepage": "https://github.com/xfy196/blog/tree/master/packages/vitepress-plugin-pagefind",
   "bugs": {
-    "url": "https://github.com/ATQQ/sugar-blog/issues"
+    "url": "https://github.com/xfy196/blog/issues"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0-alpha.42",
