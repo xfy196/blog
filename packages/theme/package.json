@@ -24,7 +24,7 @@
   "keywords": [
     "vitepress",
     "theme",
-    "小小荧"
+    "@sugarat/theme"
   ],
   "author": "sugar",
   "license": "MIT",
