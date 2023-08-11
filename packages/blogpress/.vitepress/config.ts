@@ -4,7 +4,7 @@ import themePkg from '@sugarat/theme/package.json'
 const blogTheme = getThemeConfig({
   author: '小小荧',
   comment: {
-    repo: 'ATQQ/sugar-blog',
+    repo: 'xfy196/blog',
     repoId: 'MDEwOlJlcG9zaXRvcnkyNDEyNDUyOTk',
     category: 'Announcements',
     categoryId: 'DIC_kwDODmEcc84COVc6',
@@ -113,6 +113,7 @@ export default defineConfig({
   themeConfig: {
     search: {
       provider: 'algolia',
+      // provider: "local"
       options: {
         appId: '5TAHXOHU34',
         apiKey: '96040fed07f2e7c821444fe540dd19a9',
