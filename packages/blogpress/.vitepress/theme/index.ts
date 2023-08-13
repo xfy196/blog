@@ -1,6 +1,8 @@
 import { h } from 'vue'
 import { EnhanceAppContext } from 'vitepress'
 import BlogTheme, { Theme } from '@sugarat/theme'
+import '@docsearch/css'
+import docsearch from '@docsearch/js'
 
 // 全局组件
 import redirectBtn from './src/components/redirectBtn.vue'
@@ -34,7 +36,13 @@ export default {
     const { app } = ctx
     app.component('redirectBtn', redirectBtn)
     app.component('solve', Solve)
-
+    docsearch({
+      appId: 'FSCXD4L73U',
+      apiKey: 'f75015e381469e2bf49eee57391873dc',
+      indexName: 'xxytime',
+      insights: true, // Optional, automatically send insights when user interacts with search results
+      container: 'docsearch'
+    })
     if (inBrowser) {
       //  添加重定向逻辑，兼容旧版博客的分类和标签逻辑
       ctx.router.onBeforeRouteChange = (to) => {
