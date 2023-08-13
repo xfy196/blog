@@ -1,5 +1,5 @@
 {
-  "index_name": "xxytime_top",
+  "index_name": "xxytime",
   "start_urls": ["https://xxytime.top"],
   "rateLimit": 8,
   "maxDepth": 10,
