@@ -1,13 +1,5 @@
 import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
 import themePkg from '@sugarat/theme/package.json'
-// import { SearchPlugin } from '@pzy915/vitepress-plugin-search'
-
-// var options = {
-//   previewLength: 20,
-//   buttonLabel: '搜索',
-//   placeholder: '文章搜索',
-//   tokenize: 'full'
-// }
 
 const blogTheme = getThemeConfig({
   author: '小小荧',
@@ -113,7 +105,6 @@ export default defineConfig({
     ...extraHead
   ],
   vite: {
-    // plugins: [SearchPlugin(options)],
     server: {
       port: 4000,
       host: '0.0.0.0'
