@@ -132,7 +132,7 @@ export default defineConfig({
       insights: true, 
       });
     `
-    ]
+    ],
     ...extraHead
   ],
   vite: {
