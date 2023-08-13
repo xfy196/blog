@@ -6,7 +6,6 @@ importers:
     specifiers:
       '@changesets/cli': ^2.26.1
       '@docsearch/css': ^3.5.1
-      '@docsearch/js': ^3.5.1
       '@types/node': ^16.18.4
       '@typescript-eslint/eslint-plugin': ^4.33.0
       '@typescript-eslint/parser': ^4.33.0
@@ -22,7 +21,6 @@ importers:
       zx: ^5.1.0
     dependencies:
       '@docsearch/css': 3.5.1
-      '@docsearch/js': 3.5.1
     devDependencies:
       '@changesets/cli': 2.26.2
       '@types/node': 16.18.40
