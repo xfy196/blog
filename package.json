@@ -1,5 +1,5 @@
 {
-  "name": "sugar-wiki-monorepo",
+  "name": "blog",
   "version": "2.0.0",
   "private": true,
   "description": "个人博客&知识&文档站集",
@@ -15,7 +15,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-todo-ddl": "^1.1.1",
     "eslint-plugin-vue": "^7.20.0",
-    "vitepress-plugin-tabs": "^0.3.0",
     "prettier": "^2.8.1",
     "typescript": "5.1.6",
     "zx": "^5.1.0"
@@ -43,7 +42,7 @@
     "url": "git+https://github.com/xfy196/blog.git"
   },
   "keywords": [],
-  "author": "sugar",
+  "author": "小小荧",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xfy196/blog/issues"
