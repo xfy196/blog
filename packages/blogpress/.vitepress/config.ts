@@ -11,31 +11,7 @@ import themePkg from '@sugarat/theme/package.json'
 
 const blogTheme = getThemeConfig({
   author: '小小荧',
-  head: [
-    [
-      'link',
-      {
-        rel: 'preconnect',
-        href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3'
-      }
-    ],
-    [
-      'script',
-      { async: '', src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3' }
-    ],
-    [
-      'script',
-      {},
-      `
-    docsearch({
-      appId: FSCXD4L73U,
-      apiKey: f75015e381469e2bf49eee57391873dc,
-      indexName: xxytime,
-      insights: true, 
-      });
-    `
-    ]
-  ],
+
   comment: {
     repo: 'xfy196/blog',
     repoId: 'MDEwOlJlcG9zaXRvcnkyNDEyNDUyOTk',
@@ -134,6 +110,29 @@ export default defineConfig({
       'link',
       { rel: 'apple-touch-icon', href: '/favicon.ico', sizes: '180x180' }
     ],
+    [
+      'link',
+      {
+        rel: 'preconnect',
+        href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3'
+      }
+    ],
+    [
+      'script',
+      { async: '', src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3' }
+    ],
+    [
+      'script',
+      {},
+      `
+    docsearch({
+      appId: FSCXD4L73U,
+      apiKey: f75015e381469e2bf49eee57391873dc,
+      indexName: xxytime,
+      insights: true, 
+      });
+    `
+    ]
     ...extraHead
   ],
   vite: {
