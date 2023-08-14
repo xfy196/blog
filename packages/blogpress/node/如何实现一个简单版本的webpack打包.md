@@ -1,6 +1,7 @@
 ---
-title: 如何实现一个简单版本的webpack打包
-date: 2022-03-04
+isTimeLine: true
+title: 前端利用切片实现大文件断点续传
+date: 2023-08-14
 tags:
   - Node
 categories:

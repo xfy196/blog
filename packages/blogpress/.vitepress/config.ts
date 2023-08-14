@@ -141,13 +141,13 @@ export default defineConfig({
       text: '去 GitHub 上编辑内容'
     },
     nav: [
-      // { text: "导航", link: "/nav", activeMatch: "^/nav" },
       {
         text: '前端浅聊',
         items: [
           { text: 'Vue2', link: '/fe/Vue2/' },
           { text: 'Vue3', link: '/fe/Vue3/Vue3的数据双向绑定的原理' },
-          { text: 'React', link: '/fe/React/' }
+          { text: 'React', link: '/fe/React/React18新特性尝鲜' },
+          { text: 'JavaScript', link: '/fe/JavaScript/你还记得这些DOM操作么？' }
         ],
         activeMatch: '^/fe'
       },
@@ -155,11 +155,11 @@ export default defineConfig({
         text: '后端',
         items: [
           {
-            text: 'nodejs',
-            link: '/node/如何实现一个简单版本的webpack打包'
+            text: 'Node',
+            link: '/Node/如何实现一个简单版本的webpack打包'
           }
         ],
-        activeMatch: '^/node'
+        activeMatch: '^/Node'
       },
       {
         text: '总结',

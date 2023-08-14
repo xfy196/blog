@@ -1,8 +1,10 @@
 ---
+isTimeLine: true
 title: Vue3的数据双向绑定的原理
 date: 2022-02-18
 tags:
   - Vue
+  - Vue3
 categories:
   - 前端
 ---
