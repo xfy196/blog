@@ -65,11 +65,10 @@ const extraHead: any =
             src: '//sdk.51.la/js-sdk-pro.min.js'
           }
         ],
-        ['script', { src: '//js.users.51.la/21760109.js' }],
         [
           'script',
           {},
-          'LA.init({id: "Jgmg5avjAUvoyePS",ck: "Jgmg5avjAUvoyePS",hashMode: true})'
+          'LA.init({id: "3Fb0Re8nKslK8DW1",ck: "3Fb0Re8nKslK8DW1",hashMode: true})'
         ],
         [
           'script',
