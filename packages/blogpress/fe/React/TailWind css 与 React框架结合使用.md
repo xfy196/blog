@@ -134,4 +134,4 @@ https://tailwindcss.com/
 
 ### 小试牛刀
 
-![Peek 2021-03-13 18-27.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/00a243a67ef4476ebf4df29a84cc6727~tplv-k3u1fbpfcp-watermark.image)
+![Peek 2021-03-13 18-27.gif](https://cdn.jsdelivr.net/gh/xfy196/images@main/202308141514744.png)
