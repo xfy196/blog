@@ -65,6 +65,7 @@ const extraHead: any =
             src: '//sdk.51.la/js-sdk-pro.min.js'
           }
         ],
+        ['script', { src: '//js.users.51.la/21760109.js' }],
         [
           'script',
           {},
