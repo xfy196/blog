@@ -144,9 +144,13 @@ export default defineConfig({
       {
         text: '前端浅聊',
         items: [
+          { text: 'CSS', link: '/fe/CSS/关于如何计算rem' },
           { text: 'Vue2', link: '/fe/Vue2/' },
           { text: 'Vue3', link: '/fe/Vue3/Vue3的数据双向绑定的原理' },
-          { text: 'React', link: '/fe/React/React18新特性尝鲜' },
+          {
+            text: 'React',
+            link: '/fe/React/TailWind css 与 React框架结合使用'
+          },
           { text: 'JavaScript', link: '/fe/JavaScript/你还记得这些DOM操作么？' }
         ],
         activeMatch: '^/fe'
@@ -156,21 +160,17 @@ export default defineConfig({
         items: [
           {
             text: 'Node',
-            link: '/Node/如何实现一个简单版本的webpack打包'
+            link: '/be/Node/前端利用切片实现大文件断点续传'
           }
         ],
-        activeMatch: '^/Node'
+        activeMatch: '^/be'
       },
       {
         text: '总结',
         items: [
           {
-            text: '2022年',
+            text: '2022年度工作总结',
             link: '/summarize/2022年度工作总结'
-          },
-          {
-            text: '上海疫情思考',
-            link: '/summarize/疫情下的上海我在做什么'
           }
         ],
         activeMatch: '^/summarize'

@@ -9,7 +9,7 @@ categories:
   - 前端
 ---
 
-![新一代状态管理工具，Piniajs 上手指南](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbd7497c92044268afd07a86f3c62de2~tplv-k3u1fbpfcp-zoom-1.image)
+![新一代状态管理工具，Piniajs 上手指南](https://cdn.jsdelivr.net/gh/xfy196/images@main/202308141355049.png)
 
 > Hello 各位小伙伴有段时间没有更新文章了，最近我在干啥呢，第一： 最近工作也是比较累的，第二： 最近突然想把我大学的一个博客项目给翻新一下使用了 nuxt+egg.js 的方式完成全栈开发，所以这段时间一直忙着设计这个项目也差不多要完工，到时候开源出来，喜欢的小伙伴记得点个 star
 
