@@ -6,10 +6,11 @@ const blogTheme = getThemeConfig({
 
   comment: {
     repo: 'xfy196/blog',
-    repoId: 'MDEwOlJlcG9zaXRvcnkyNDEyNDUyOTk',
+    repoId: 'R_kgDOKF2YWA',
     category: 'Announcements',
-    categoryId: 'DIC_kwDODmEcc84COVc6',
-    inputPosition: 'top'
+    categoryId: 'DIC_kwDOKF2YWM4CYleI',
+    inputPosition: 'top',
+    loading: 'lazy'
   },
   popover: {
     title: '公告',
