@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import { execSync, spawn, spawnSync } from 'child_process'
 import path from 'path'
-import type { SiteConfig, UserConfig } from 'vitepress'
+import type { Header, SiteConfig, UserConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { formatDate } from './utils/index'
 import type { Theme } from './composables/config/index'
@@ -333,6 +333,7 @@ function aliasObjectToArray(obj: Record<string, string>) {
     replacement
   }))
 }
+
 export function defineConfig(config: UserConfig<Theme.Config>): any {
   // 兼容低版本主题配置
   // @ts-ignore
@@ -385,3 +386,15 @@ export function defineConfig(config: UserConfig<Theme.Config>): any {
 }
 
 export { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+export interface PageData {
+  relativePath: string
+  filePath: string // differs from relativePath in case of path rewrites
+  title: string
+  titleTemplate?: string | boolean
+  description: string
+  headers: Header[]
+  frontmatter: Record<string, any>
+  params?: Record<string, any>
+  isNotFound?: boolean
+  lastUpdated?: number
+}

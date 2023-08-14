@@ -1,5 +1,9 @@
-import { getThemeConfig, defineConfig } from '@sugarat/theme/node'
+import { getThemeConfig, defineConfig, PageData } from '@sugarat/theme/node'
 import themePkg from '@sugarat/theme/package.json'
+import { createWriteStream } from 'fs'
+import { resolve } from 'path'
+import { SitemapStream } from 'sitemap'
+const links: { url: string; lastmod: PageData['lastUpdated'] }[] = []
 
 const blogTheme = getThemeConfig({
   author: '小小荧',
@@ -177,5 +181,21 @@ export default defineConfig({
       }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/xfy196/blog' }]
+  },
+  /* 生成站点地图 */
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
+        lastmod: pageData.lastUpdated
+      })
+  },
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://notes.fe-mm.com/' })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach((link) => sitemap.write(link))
+    sitemap.end()
+    await new Promise((r) => writeStream.on('finish', r))
   }
 })
