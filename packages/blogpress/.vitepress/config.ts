@@ -121,7 +121,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'FSCXD4L73U',
-        apiKey: 'b3699c5743c4e01b66a48e52b386a206',
+        apiKey: 'ef06c74e17928bbd4f6d881eba438f56',
         indexName: 'xxytime',
         placeholder: '请输入关键词',
         locales: {
