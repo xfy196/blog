@@ -228,7 +228,7 @@ export default defineConfig({
       })
   },
   buildEnd: async ({ outDir }) => {
-    const sitemap = new SitemapStream({ hostname: 'https://xxytime.top/' })
+    const sitemap = new SitemapStream({ hostname: 'https://www.xxytime.top/' })
     const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
     sitemap.pipe(writeStream)
     links.forEach((link) => sitemap.write(link))
