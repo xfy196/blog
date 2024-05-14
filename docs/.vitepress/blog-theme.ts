@@ -82,5 +82,31 @@ const blogTheme = getThemeConfig({
     },
   ],
 });
-
-export { blogTheme };
+const extraHead: any =
+  process.env.NODE_ENV === 'production'
+    ? [
+        [
+          'script',
+          {
+            charset: 'UTF-8',
+            id: 'LA_COLLECT',
+            src: '//sdk.51.la/js-sdk-pro.min.js'
+          }
+        ],
+        [
+          'script',
+          {},
+          'LA.init({id: "3Fb0Re8nKslK8DW1",ck: "3Fb0Re8nKslK8DW1",hashMode: true})'
+        ],
+        [
+          'script',
+          {},
+          `if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then((registrations) => {
+            registrations.forEach(sw => sw.unregister())
+          })
+        }`
+        ]
+      ]
+    : []
+export { blogTheme, extraHead };
