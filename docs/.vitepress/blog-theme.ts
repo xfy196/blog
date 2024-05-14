@@ -1,13 +1,13 @@
 // 主题独有配置
-import { getThemeConfig } from "vitepress";
-import type { Theme } from '@sugarat/theme'
-const baseUrl = 'https://xxytime.top'
+import { getThemeConfig } from "@sugarat/theme/node";
+import type { Theme } from "@sugarat/theme";
+const baseUrl = "https://xxytime.top";
 
 const RSS: Theme.RSSOptions = {
-  title: '@sugarat/theme',
+  title: "@sugarat/theme",
   baseUrl,
-  copyright: 'Copyright (c) 2020-present, 小小荧',
-}
+  copyright: "Copyright (c) 2020-present, 小小荧",
+};
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
@@ -83,30 +83,30 @@ const blogTheme = getThemeConfig({
   ],
 });
 const extraHead: any =
-  process.env.NODE_ENV === 'production'
+  process.env.NODE_ENV === "production"
     ? [
         [
-          'script',
+          "script",
           {
-            charset: 'UTF-8',
-            id: 'LA_COLLECT',
-            src: '//sdk.51.la/js-sdk-pro.min.js'
-          }
+            charset: "UTF-8",
+            id: "LA_COLLECT",
+            src: "//sdk.51.la/js-sdk-pro.min.js",
+          },
         ],
         [
-          'script',
+          "script",
           {},
-          'LA.init({id: "3Fb0Re8nKslK8DW1",ck: "3Fb0Re8nKslK8DW1",hashMode: true})'
+          'LA.init({id: "3Fb0Re8nKslK8DW1",ck: "3Fb0Re8nKslK8DW1",hashMode: true})',
         ],
         [
-          'script',
+          "script",
           {},
           `if ('serviceWorker' in navigator) {
           navigator.serviceWorker.getRegistrations().then((registrations) => {
             registrations.forEach(sw => sw.unregister())
           })
-        }`
-        ]
+        }`,
+        ],
       ]
-    : []
+    : [];
 export { blogTheme, extraHead };
