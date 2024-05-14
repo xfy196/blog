@@ -1,5 +1,5 @@
 // 主题独有配置
-import { getThemeConfig } from "@sugarat/theme/node";
+import { getThemeConfig } from "vitepress";
 import type { Theme } from '@sugarat/theme'
 const baseUrl = 'https://xxytime.top'
 
