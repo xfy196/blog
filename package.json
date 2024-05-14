@@ -1,8 +1,8 @@
 {
-  "name": "vitepress-blog",
+  "name": "blog",
   "version": "1.0.0",
   "private": true,
-  "author": "粥里有勺糖",
+  "author": "小小荧",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -20,6 +20,7 @@
     "doc": "docs"
   },
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "sass": "^1.76.0",
     "typescript": "^5.4.5",
     "vitepress": "1.1.4"
