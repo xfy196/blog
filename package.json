@@ -25,6 +25,9 @@
     "typescript": "^5.4.5",
     "vitepress": "1.1.4"
   },
+  "resolutions": {
+    "oh-my-live2d": "^0.19.3"
+  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
