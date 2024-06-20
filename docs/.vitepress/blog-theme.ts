@@ -15,10 +15,10 @@ const blogTheme = getThemeConfig({
   themeColor: "vp-default",
   RSS,
   oml2d: {
-    mobileDisplay: true,
+    mobileDisplay: false,
     models: [
       {
-        path: "https://registry.npmmirror.com/oml2d-models/latest/files/models/Senko_Normals/senko.model3.json",
+        path: "https://model.oml2d.com/Senko_Normals/senko.model3.json",
       },
     ],
   },
@@ -75,11 +75,11 @@ const blogTheme = getThemeConfig({
     style: "sidebar",
   },
   authorList: [
-    {
-      nickname: "小小荧",
-      url: "https://xxytime.top/aboutme.html",
-      des: "你的指尖,拥有改变世界的力量",
-    },
+    // {
+    //   nickname: "小小荧",
+    //   url: "https://xxytime.top/aboutme.html",
+    //   des: "你的指尖,拥有改变世界的力量",
+    // },
   ],
 });
 const extraHead: any =
