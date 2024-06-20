@@ -77,7 +77,7 @@ const blogTheme = getThemeConfig({
   authorList: [
     {
       nickname: "小小荧",
-      url: "https://sugarat.top/aboutme.html",
+      url: "https://xxytime.top/aboutme.html",
       des: "你的指尖,拥有改变世界的力量",
     },
   ],
