@@ -74,13 +74,13 @@ const blogTheme = getThemeConfig({
     nextText: "下一页",
     style: "sidebar",
   },
-  authorList: [
-    // {
-    //   nickname: "小小荧",
-    //   url: "https://xxytime.top/aboutme.html",
-    //   des: "你的指尖,拥有改变世界的力量",
-    // },
-  ],
+  // authorList: [
+  //   {
+  //     nickname: "小小荧",
+  //     url: "https://xxytime.top/aboutme.html",
+  //     des: "你的指尖,拥有改变世界的力量",
+  //   },
+  // ],
 });
 const extraHead: any =
   process.env.NODE_ENV === "production"
