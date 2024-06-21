@@ -128,6 +128,10 @@ export default defineConfig({
             text: "Node",
             link: "/be/Node/前端利用切片实现大文件断点续传",
           },
+          {
+            text: "Python",
+            link: "/be/Python/王者荣耀皮肤爬取",
+          },
         ],
         activeMatch: "^/be",
       },
