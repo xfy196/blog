@@ -130,7 +130,7 @@ export default defineConfig({
           },
           {
             text: "Python",
-            link: "/be/Python/王者荣耀皮肤爬取",
+            link: "/be/Python/王者荣耀图鉴皮肤怎么来的",
           },
         ],
         activeMatch: "^/be",
