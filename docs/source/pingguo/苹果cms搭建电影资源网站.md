@@ -158,7 +158,7 @@ ck资源   ：  https://ckzy.me/api.php/provide/vod/?ac=list                    
 如果觉得你的网站太空洞，其实可以设置一个幻灯片，让你的网站丰富美观起来，就像这样
 ![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F19%2F23-06-32-55757d7e41e8ccefcb0dfa9247cb3abb-20240419230631-e7c208.png)
 设置起来也非常简单，首先进入海螺模板，找到这个幻灯片模式，要设置成大图模式才可以正常显示
-https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F19%2F23-07-00-a74e1c057705397196106b5383a7cfda-20240419230700-c0abc4.png
+![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F19%2F23-07-00-a74e1c057705397196106b5383a7cfda-20240419230700-c0abc4.png)
 视频--视频数据--找到视频--编辑---上传海报（可以去其他视频网站下载一下。f12这个不用我教你们了吧）
 ![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F19%2F23-05-51-1f93785e9f83927ed331665720ba6da5-20240419230550-77f23c.png)
 然后保存，设置推荐9 即可显示了
