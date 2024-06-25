@@ -144,6 +144,10 @@ export default defineConfig({
             text: "文件快递柜",
             link: "/source/文件快递柜-免费开源-FileCodeBox",
           },
+          {
+            text: "资源分享网站搭建",
+            link: "/source/基于wordpress的资源分享网站搭建",
+          },
         ],
         activeMatch: "^/source",
       },

@@ -7,7 +7,7 @@ tags:
 categories:
   - 源码资源
 ---
-像拿快递一样取文件
+# 像拿快递一样取文件
 ![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F05%2F09%2F11-03-46-76419f522c20fb658e5b3cc330cb0584-20240509110343-225161.png)
 ### 什么FileCodeBox
 > FileCodeBox 中文名是 文件快递柜，取文件像取快递一样，支持通过匿名口令分享文本，文件。
