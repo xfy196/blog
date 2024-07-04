@@ -4,8 +4,9 @@ import type { Theme } from "@sugarat/theme";
 const baseUrl = "https://xxytime.top";
 
 const RSS: Theme.RSSOptions = {
-  title: "@sugarat/theme",
+  title: "小小荧博客",
   baseUrl,
+  language: 'zh-cn',
   copyright: "Copyright (c) 2020-present, 小小荧",
 };
 
