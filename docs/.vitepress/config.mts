@@ -161,6 +161,19 @@ export default defineConfig({
         ],
         activeMatch: "^/summarize",
       },
+      {
+        text: "工具",
+        items: [
+          {
+            text: "在线抠图",
+            link: "/tool/在线抠图",
+          },
+          {
+            text: "模糊修复",
+            link: "/tool/模糊修复",
+          }
+        ]
+      }
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],
   },
