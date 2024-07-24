@@ -171,6 +171,10 @@ export default defineConfig({
           {
             text: "模糊修复",
             link: "/tool/模糊修复",
+          },
+          {
+            text: "图片压缩",
+            link: "/tool/图片压缩",
           }
         ]
       }
