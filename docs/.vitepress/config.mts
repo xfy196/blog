@@ -165,17 +165,13 @@ export default defineConfig({
         text: "工具",
         items: [
           {
-            text: "在线抠图",
-            link: "/tool/在线抠图",
+            text: "图片类工具",
+            link: "/tool/图片/在线抠图",
           },
           {
-            text: "模糊修复",
-            link: "/tool/模糊修复",
+            text: "视频类工具",
+            link: "/tool/视频/视频下载",
           },
-          {
-            text: "图片压缩",
-            link: "/tool/图片压缩",
-          }
         ]
       }
     ],
