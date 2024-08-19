@@ -96,7 +96,7 @@ export default defineConfig({
     footer: {
       message:
         '<div style="display:flex;justify-content:center;align-items:center;"><a style="display:inline-block;" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img width="80" src="/又拍云_logo2.png"/></a><a style="display:inline-block;" target="_blank" href="https://www.rainyun.com/Mjk3ODIz_">低价服务器</a></div>',
-      copyright: `© 2020-present 小小荧`,
+      copyright: `<a target="_blank" href="https://beian.miit.gov.cn/">皖ICP备18011786号-1</a>© 2020-present 小小荧`,
     },
     logo: "/logo.png",
     editLink: {
