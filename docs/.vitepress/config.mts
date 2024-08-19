@@ -173,6 +173,10 @@ export default defineConfig({
             link: "/tool/视频/视频下载",
           },
         ]
+      },
+      {
+        text: "TG图床",
+        link: "https://cdn.xxytime.top/"
       }
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],

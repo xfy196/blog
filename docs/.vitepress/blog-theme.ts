@@ -19,8 +19,11 @@ const blogTheme = getThemeConfig({
     mobileDisplay: false,
     models: [
       {
-        path: "https://model.oml2d.com/Senko_Normals/senko.model3.json",
+        path: 'https://oml2d-models.sugarat.top/Senko_Normals/senko.model3.json',
       },
+      {
+        path: 'https://oml2d-models.sugarat.top/mai/model.json',
+      }
     ],
   },
   comment: {
