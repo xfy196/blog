@@ -17,7 +17,7 @@ const blogTheme = getThemeConfig({
   RSS,
   footer: [
     {
-      message: '<div style="display: flex;justify-content: center;align-items: center;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img style="width: 70px; margin: 0 auto;" src="/又拍云_logo2.png"/></a><a href="https://www.rainyun.com/Mjk3ODIz_">雨云低价服务器</a></div>'
+      message: '<p style="display: flex;justify-content: center;align-items: center;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img style="width: 70px; margin: 0 auto;" src="/又拍云_logo2.png"/></a><a href="https://www.rainyun.com/Mjk3ODIz_">雨云低价服务器</a></p>'
     },
     {
       copyright: '2020-present 小小荧',
