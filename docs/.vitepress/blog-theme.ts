@@ -1,5 +1,5 @@
 // 主题独有配置
-import { getThemeConfig } from "@sugarat/theme/node";
+import { footerHTML, getThemeConfig } from "@sugarat/theme/node";
 import type { Theme } from "@sugarat/theme";
 const baseUrl = "https://xxytime.top";
 
@@ -15,12 +15,27 @@ const blogTheme = getThemeConfig({
   author: "小小荧",
   themeColor: "vp-default",
   RSS,
+  footer: [
+    {
+      message: '<span style="display: flex;justify-content: center;align-items: center;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img style="width: 70px; margin: 0 auto;" src="/又拍云_logo2.png"/></a><a href="https://www.rainyun.com/Mjk3ODIz_">雨云低价服务器</a></span>',
+    },
+    {
+      copyright: '2020-present 小小荧',
+      icpRecord: {
+        name: '皖ICP备2024059138号-1',
+        link: 'https://beian.miit.gov.cn/'
+      },
+    }
+  ],
   oml2d: {
     mobileDisplay: false,
     models: [
       {
-        path: "https://model.oml2d.com/Senko_Normals/senko.model3.json",
+        path: 'https://oml2d-models.sugarat.top/Senko_Normals/senko.model3.json',
       },
+      {
+        path: 'https://oml2d-models.sugarat.top/mai/model.json',
+      }
     ],
   },
   comment: {

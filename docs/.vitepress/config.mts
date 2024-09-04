@@ -93,11 +93,6 @@ export default defineConfig({
       },
     },
     lastUpdatedText: "上次更新于",
-    footer: {
-      message:
-        '<a style="display:inline-block;" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img width="80" src="/又拍云_logo2.png"/></a>',
-      copyright: `<a target="_blank" href="https://beian.miit.gov.cn/">皖ICP备18011786号-1</a> © 2020-present 小小荧`,
-    },
     logo: "/logo.png",
     editLink: {
       pattern:
@@ -165,18 +160,18 @@ export default defineConfig({
         text: "工具",
         items: [
           {
-            text: "在线抠图",
-            link: "/tool/在线抠图",
+            text: "图片类工具",
+            link: "/tool/图片/在线抠图",
           },
           {
-            text: "模糊修复",
-            link: "/tool/模糊修复",
+            text: "视频类工具",
+            link: "/tool/视频/视频下载",
           },
-          {
-            text: "图片压缩",
-            link: "/tool/图片压缩",
-          }
         ]
+      },
+      {
+        text: "TG图床",
+        link: "https://cdn.xxytime.top/"
       }
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],
