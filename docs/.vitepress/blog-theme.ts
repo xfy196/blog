@@ -13,7 +13,7 @@ const RSS: Theme.RSSOptions = {
 // 所有配置项，详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
   author: "小小荧",
-  themeColor: "vp-default",
+  themeColor: "vp-green",
   RSS,
   footer: [
     {
