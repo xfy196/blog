@@ -167,12 +167,37 @@ export default defineConfig({
             text: "视频类工具",
             link: "/tool/视频/视频下载",
           },
-        ]
+        ],
       },
       {
-        text: "TG图床",
-        link: "https://cdn.xxytime.top/"
-      }
+        text: "线上作品",
+        items: [
+          {
+            text: "R2图床",
+            link: "https://tc.xxytime.top/",
+          },
+          {
+            text: "IT开发工具箱",
+            link: "https://www.dtool.tech/",
+          },
+          {
+            text: "TG图床",
+            link: "https://cdn.xxytime.top/",
+          },
+          {
+            text: "仿网易云",
+            link: "https://music.xxytime.top/",
+          },
+          {
+            text: "仿QQ音乐",
+            link: "https://xfy196.github.io/qq-music-vue3/",
+          },
+          {
+            text: "Vue3虚拟滚动列表",
+            link: "https://virtual-list-scroll-v3.vercel.app/"
+          }
+        ],
+      },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],
   },
