@@ -174,7 +174,7 @@ export default defineConfig({
         items: [
           {
             text: "壁纸星球",
-            link: "https://wallpaper.xxytime.top/",
+            link: "https://bz.xxytime.top/",
           },
           {
             text: "R2图床",
