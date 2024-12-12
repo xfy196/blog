@@ -173,6 +173,10 @@ export default defineConfig({
         text: "线上作品",
         items: [
           {
+            text: "壁纸星球",
+            link: "https://wallpaper.xxytime.top/",
+          },
+          {
             text: "R2图床",
             link: "https://tc.xxytime.top/",
           },
