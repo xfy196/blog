@@ -96,7 +96,7 @@ export default defineConfig({
     logo: "/logo.png",
     editLink: {
       pattern:
-        "https://github.com/xfy196/blog/tree/master/packages/blogpress/:path",
+        "https://github.com/xfy196/blog/tree/main/docs/:path",
       text: "去 GitHub 上编辑内容",
     },
     nav: [
