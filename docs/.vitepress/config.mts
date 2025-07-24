@@ -44,8 +44,8 @@ export default defineConfig({
       provider: "algolia",
       options: {
         appId: "14FZOTGKW4",
-        apiKey: "32f42e145ab555ef8c1ea3f03eb0e6b8",
-        indexName: "blog",
+        apiKey: "60da2a9e73938b210ef77f33e1424889",
+        indexName: "blog_pages",
         placeholder: "请输入关键词",
         locales: {
           zh: {
