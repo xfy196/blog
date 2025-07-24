@@ -43,7 +43,7 @@ export default defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: "14FZOTGKW4",
+        appId: "DYZ4KEFCMK",
         apiKey: "60da2a9e73938b210ef77f33e1424889",
         indexName: "blog_pages",
         placeholder: "请输入关键词",
