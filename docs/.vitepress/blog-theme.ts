@@ -1,7 +1,7 @@
 // 主题独有配置
 import { footerHTML, getThemeConfig } from "@sugarat/theme/node";
 import type { Theme } from "@sugarat/theme";
-const baseUrl = "https://xxytime.top";
+const baseUrl = "https://blog.xxytime.top";
 
 const RSS: Theme.RSSOptions = {
   title: "小小荧博客",
@@ -68,7 +68,7 @@ const blogTheme = getThemeConfig({
     footer: [
       {
         type: "button",
-        link: "https://xxytime.top",
+        link: "https://blog.xxytime.top",
         content: "作者博客",
         props: {
           round: true,
@@ -93,7 +93,7 @@ const blogTheme = getThemeConfig({
   // authorList: [
   //   {
   //     nickname: "小小荧",
-  //     url: "https://xxytime.top/aboutme.html",
+  //     url: "https://blog.xxytime.top/aboutme.html",
   //     des: "你的指尖,拥有改变世界的力量",
   //   },
   // ],
