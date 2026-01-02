@@ -7,13 +7,17 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "upload-img": "node scripts/md-upload-img.js"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.5.6",
+    "axios": "^1.13.2",
     "element-plus": "^2.7.2",
     "sitemap": "^8.0.0",
+    "upyun": "^3.4.6",
+    "uuid": "^13.0.0",
     "vue": "3.5.18"
   },
   "directories": {
@@ -21,6 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
+    "gray-matter": "^4.0.3",
     "sass": "^1.76.0",
     "typescript": "^5.9.2",
     "vitepress": "1.6.3"
