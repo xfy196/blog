@@ -2,7 +2,6 @@
 isTimeLine: true
 title: CSS写SQL查询后端慌了
 date: 2026-01-02
-origin: me
 tags:
   - CSS
 categories:

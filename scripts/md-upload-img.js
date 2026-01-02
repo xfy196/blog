@@ -218,7 +218,7 @@ async function main() {
         });
         
         // 将 origin 从 'weixin' 改为 'me'
-        frontmatter.origin = 'me';
+        delete frontmatter.origin;
         
         // 重新组合 frontmatter 和内容
         content = matter.stringify(markdownContent, frontmatter);
