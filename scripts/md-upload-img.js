@@ -75,7 +75,7 @@ function getFileExtension(url) {
     const parsedUrl = new URL(url);
     const pathname = parsedUrl.pathname;
     const ext = path.extname(pathname).toLowerCase();
-    return ext || '.jpg'; // 默认为jpg
+    return ext || '';
 }
 
 /**
