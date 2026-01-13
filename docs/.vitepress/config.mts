@@ -130,6 +130,16 @@ export default defineConfig({
         ],
         activeMatch: "^/be",
       },
+       {
+        text: "web3",
+        items: [
+          {
+            text: "solidity",
+            link: "/web3/solidity/Delegatecall(委托调用)",
+          },
+        ],
+        activeMatch: "^/web3",
+      },
       {
         text: "源码资源",
         items: [
