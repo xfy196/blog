@@ -2,14 +2,14 @@
 isTimeLine: true
 title: Delegatecall(委托调用)
 date: '2026-01-13'
-hidden: true
+public: false
 tags:
   - web3
   - solidity
 categories:
   - web3
 ---
-
+# Delegatecall(委托调用)
 Delegatecall(委托调用) 是 Solidity 中一种强大的功能，它允许一个合约调用另一个合约的函数，并且使用调用合约的存储。这意味着被调用的合约可以修改调用合约的存储，从而实现一些有趣和有用的功能。
 >**简单的看个demo**
 ```solidity
