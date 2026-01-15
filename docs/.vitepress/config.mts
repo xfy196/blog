@@ -163,6 +163,10 @@ export default defineConfig({
             text: "2022年度工作总结",
             link: "/summarize/2022年度工作总结",
           },
+             {
+            text: "2025年度工作总结",
+            link: "/summarize/2025年度工作总结",
+          },
         ],
         activeMatch: "^/summarize",
       },
