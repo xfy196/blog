@@ -130,6 +130,13 @@ export default defineConfig({
         ],
         activeMatch: "^/be",
       },
+      {
+        text: "AI",
+        items: [
+          { text: "揭秘AI技能宝库：skills.sh让你的AI能力瞬间拉满", link: "/ai/揭秘AI技能宝库：skills.sh让你的AI能力瞬间拉满" },
+        ],
+        activeMatch: "^/ai",
+      },
        {
         text: "web3",
         items: [
@@ -186,10 +193,6 @@ export default defineConfig({
       {
         text: "线上作品",
         items: [
-          {
-            text: "壁纸星球",
-            link: "https://bz.xxytime.top/",
-          },
           {
             text: "R2图床",
             link: "https://tc.xxytime.top/",
