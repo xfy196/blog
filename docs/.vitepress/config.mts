@@ -2,6 +2,15 @@ import { defineConfig, PageData } from "vitepress";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
+import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+
+const RSS: RSSOptions = {
+  title: "小小荧博客",
+  baseUrl: "https://blog.xxytime.top",
+  language: 'zh-cn',
+  author: [{ name: "小小荧", link: "https://blog.xxytime.top",email: "xfy196@outlook.com", avatar: "https://blog.xxytime.top/logo.png" }],
+  copyright: `2020-${new Date().getFullYear()} 小小荧`,
+}
 const links: { url: string; lastmod: PageData["lastUpdated"] }[] = [];
 import { blogTheme, extraHead } from "./blog-theme";
 
@@ -33,6 +42,9 @@ export default defineConfig({
     ...extraHead,
   ],
   vite: {
+    plugins: [
+      RssPlugin(RSS),
+    ],
     server: {
       port: 4000,
       host: "0.0.0.0",
@@ -223,19 +235,19 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],
   },
   /* 生成站点地图 */
-  transformHtml: (_, id, { pageData }) => {
-    if (!/[\\/]404\.html$/.test(id))
-      links.push({
-        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2"),
-        lastmod: pageData.lastUpdated,
-      });
-  },
-  buildEnd: async ({ outDir }) => {
-    const sitemap = new SitemapStream({ hostname: "https://blog.xxytime.top/" });
-    const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
-    sitemap.pipe(writeStream);
-    links.forEach((link) => sitemap.write(link));
-    sitemap.end();
-    await new Promise((r) => writeStream.on("finish", r));
-  },
+  // transformHtml: (_, id, { pageData }) => {
+  //   if (!/[\\/]404\.html$/.test(id))
+  //     links.push({
+  //       url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2"),
+  //       lastmod: pageData.lastUpdated,
+  //     });
+  // },
+  // buildEnd: async ({ outDir }) => {
+  //   const sitemap = new SitemapStream({ hostname: "https://blog.xxytime.top/" });
+  //   const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
+  //   sitemap.pipe(writeStream);
+  //   links.forEach((link) => sitemap.write(link));
+  //   sitemap.end();
+  //   await new Promise((r) => writeStream.on("finish", r));
+  // },
 });

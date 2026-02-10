@@ -20,7 +20,7 @@ const blogTheme = getThemeConfig({
       message: '<span style="display: flex;justify-content: center;align-items: center;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img style="width: 70px; margin: 0 auto;" src="/又拍云_logo2.png"/></a><a href="https://www.rainyun.com/Mjk3ODIz_">雨云低价服务器</a></span>',
     },
     {
-      copyright: '2020-present 小小荧',
+      copyright: `2020-${new Date().getFullYear()} 小小荧`,
       icpRecord: {
         name: '皖ICP备2024059138号-1',
         link: 'https://beian.miit.gov.cn/'
