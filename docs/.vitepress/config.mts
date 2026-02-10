@@ -3,12 +3,10 @@ import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
 import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
-
+const baseUrl = "https://blog.xxytime.top";
 const RSS: RSSOptions = {
   title: "小小荧博客",
-  baseUrl: "https://blog.xxytime.top",
-  language: 'zh-cn',
-  author: [{ name: "小小荧", link: "https://blog.xxytime.top",email: "xfy196@outlook.com", avatar: "https://blog.xxytime.top/logo.png" }],
+  baseUrl,
   copyright: `2020-${new Date().getFullYear()} 小小荧`,
 }
 const links: { url: string; lastmod: PageData["lastUpdated"] }[] = [];
