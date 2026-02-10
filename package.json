@@ -19,7 +19,6 @@
     "sitemap": "^8.0.0",
     "upyun": "^3.4.6",
     "uuid": "^13.0.0",
-    "vitepress-plugin-rss": "^0.4.2",
     "vue": "3.5.18"
   },
   "directories": {

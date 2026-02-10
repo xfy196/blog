@@ -3,12 +3,6 @@ import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
 import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
-const baseUrl = "https://blog.xxytime.top";
-const RSS: RSSOptions = {
-  title: "小小荧博客",
-  baseUrl,
-  copyright: `2020-${new Date().getFullYear()} 小小荧`,
-}
 const links: { url: string; lastmod: PageData["lastUpdated"] }[] = [];
 import { blogTheme, extraHead } from "./blog-theme";
 
@@ -40,9 +34,9 @@ export default defineConfig({
     ...extraHead,
   ],
   vite: {
-    plugins: [
-      RssPlugin(RSS),
-    ],
+    // plugins: [
+    //   RssPlugin(RSS),
+    // ],
     server: {
       port: 4000,
       host: "0.0.0.0",
@@ -233,19 +227,19 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/xfy196/blog" }],
   },
   /* 生成站点地图 */
-  // transformHtml: (_, id, { pageData }) => {
-  //   if (!/[\\/]404\.html$/.test(id))
-  //     links.push({
-  //       url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2"),
-  //       lastmod: pageData.lastUpdated,
-  //     });
-  // },
-  // buildEnd: async ({ outDir }) => {
-  //   const sitemap = new SitemapStream({ hostname: "https://blog.xxytime.top/" });
-  //   const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
-  //   sitemap.pipe(writeStream);
-  //   links.forEach((link) => sitemap.write(link));
-  //   sitemap.end();
-  //   await new Promise((r) => writeStream.on("finish", r));
-  // },
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2"),
+        lastmod: pageData.lastUpdated,
+      });
+  },
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: "https://blog.xxytime.top/" });
+    const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
+    sitemap.pipe(writeStream);
+    links.forEach((link) => sitemap.write(link));
+    sitemap.end();
+    await new Promise((r) => writeStream.on("finish", r));
+  },
 });

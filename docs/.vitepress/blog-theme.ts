@@ -6,8 +6,7 @@ const baseUrl = "https://blog.xxytime.top";
 const RSS: Theme.RSSOptions = {
   title: "小小荧博客",
   baseUrl,
-  language: 'zh-cn',
-  copyright: "Copyright (c) 2020-present, 小小荧",
+  copyright: `Copyright (c) 2020-${new Date().getFullYear()} 小小荧`,
 };
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
