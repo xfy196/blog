@@ -47,17 +47,12 @@ const blogTheme = getThemeConfig({
   },
   popover: {
     title: "公告",
-    duration: -1,
-    mobileMinify: false,
+    duration: 0,
     body: [
       { type: "text", content: "👇公众号👇---👇 微信 👇" },
       {
         type: "image",
-        src: "https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-45-53-6d3e9c8982872e473335b7555c86d3ce-%E5%85%AC%E4%BC%97%E5%8F%B7-3ff56f.jpg",
-      },
-      {
-        type: "image",
-        src: "https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-46-02-6cb477bc19b8eb6ef1f3165c176c9922-%E5%BE%AE%E4%BF%A1%E5%8F%B7-9d9b97.jpg",
+        src: "https://static.xxytime.top/2026/02/11/22-15-24-26c54e69481d0eb7b0cf0785f52302fb-pintu-fulicat.com-1770819301498-917122.webp",
       },
       {
         type: "text",

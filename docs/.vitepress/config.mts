@@ -2,7 +2,6 @@ import { defineConfig, PageData } from "vitepress";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
-import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
 const links: { url: string; lastmod: PageData["lastUpdated"] }[] = [];
 import { blogTheme, extraHead } from "./blog-theme";
 
