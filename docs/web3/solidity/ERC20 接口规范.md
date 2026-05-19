@@ -62,6 +62,8 @@ contract ERC20 is IERC20 {
     string public name = "test";
     string public symbol = "TEST";
     uint public decimals = 18;
+
+    constructor() payable {}
     
     function transfer(address recipient, uint256 amount) external returns (bool){
         balanceOf[msg.sender]  -= amount;
@@ -85,6 +87,11 @@ contract ERC20 is IERC20 {
         balanceOf[msg.sender] += amount;
         totalSupply += amount;
         emit Transfer(address(0), msg.sender, amount);
+    }
+    function burn(uint amount) external {
+        balanceOf[msg.sender] -= amount;
+        totalSupply -= amount;
+        emit Transfer(msg.sender, address(0), amount);
     }
 }
 ```
