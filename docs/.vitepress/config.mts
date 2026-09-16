@@ -197,6 +197,10 @@ export default defineConfig({
         text: "线上作品",
         items: [
           {
+            text: "闪图 FlashImg（宣传文档）",
+            link: "/project/闪图-FlashImg：拖拽上传即刻分享的极速图床",
+          },
+          {
             text: "R2图床",
             link: "https://tc.xxytime.top/",
           },
