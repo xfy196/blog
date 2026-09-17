@@ -36,6 +36,10 @@ export default defineConfig({
     // plugins: [
     //   RssPlugin(RSS),
     // ],
+    // Bundle package that ships raw .vue (SSR cannot load .vue via Node ESM).
+    ssr: {
+      noExternal: ["vitepress-plugin-product-card"],
+    },
     server: {
       port: 4000,
       host: "0.0.0.0",
