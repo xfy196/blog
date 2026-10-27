@@ -201,6 +201,10 @@ export default defineConfig({
         text: "线上作品",
         items: [
           {
+            text: "宝宝的照片，最后都死在了家庭群里",
+            link: "/project/宝宝的照片，最后都死在了家庭群里.md",
+          },
+          {
             text: "闪图 FlashImg（宣传文档）",
             link: "/project/闪图-FlashImg：拖拽上传即刻分享的极速图床",
           },
