@@ -5,3 +5,5 @@ cache
 .DS_Store
 .idea
 pnpm-lock.yaml
+.env
+.env.local

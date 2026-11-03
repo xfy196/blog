@@ -2,6 +2,7 @@ import { defineConfig, PageData } from "vitepress";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
+import { mdS3Plugin } from "vite-plugin-md-s3";
 const links: { url: string; lastmod: PageData["lastUpdated"] }[] = [];
 import { blogTheme, extraHead } from "./blog-theme";
 
@@ -33,9 +34,26 @@ export default defineConfig({
     ...extraHead,
   ],
   vite: {
-    // plugins: [
-    //   RssPlugin(RSS),
-    // ],
+    plugins: [
+      // 仅作 OSS 迁移配置载体；实际执行：pnpm migrate:oss
+      mdS3Plugin({
+        s3: {
+          endpoint: process.env.S3_ENDPOINT,
+          region: process.env.S3_REGION || "auto",
+          bucket: process.env.S3_BUCKET || "blog",
+          accessKeyId: process.env.S3_ACCESS_KEY_ID || "",
+          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY || "",
+          forcePathStyle: process.env.S3_FORCE_PATH_STYLE === "true",
+          publicBaseUrl:
+            process.env.S3_PUBLIC_BASE_URL || "https://static.xxytime.top",
+        },
+        includeDir: "docs",
+        exclude: [".vitepress/**", "**/node_modules/**"],
+        fromHosts: ["oss.xxytime.top", "cdn.jsdelivr.net"],
+        keyTemplate: "date-uuid",
+        concurrency: 4,
+      }),
+    ],
     // Bundle package that ships raw .vue (SSR cannot load .vue via Node ESM).
     ssr: {
       noExternal: ["vitepress-plugin-product-card"],

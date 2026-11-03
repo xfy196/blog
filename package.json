@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "migrate:oss": "md-s3 migrate",
+    "build:md-s3": "pnpm --filter vite-plugin-md-s3 build"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -28,6 +30,7 @@
     "gray-matter": "^4.0.3",
     "sass": "^1.76.0",
     "typescript": "^5.9.2",
+    "vite-plugin-md-s3": "workspace:*",
     "vitepress": "1.6.3"
   },
   "resolutions": {

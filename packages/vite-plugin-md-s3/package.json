@@ -1,0 +1,61 @@
+{
+  "name": "vite-plugin-md-s3",
+  "version": "0.1.0",
+  "description": "Migrate remote assets in Markdown files to S3-compatible object storage",
+  "type": "module",
+  "license": "MIT",
+  "author": "小小荧",
+  "keywords": [
+    "vite",
+    "vitepress",
+    "markdown",
+    "s3",
+    "r2",
+    "oss",
+    "migrate"
+  ],
+  "bin": {
+    "md-s3": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.750.0",
+    "fast-glob": "^3.3.3",
+    "jiti": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.0.0"
+  },
+  "peerDependencies": {
+    "vite": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
