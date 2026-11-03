@@ -132,4 +132,4 @@ https://tailwindcss.com/
 
 ### 小试牛刀
 
-![Peek 2021-03-13 18-27.gif](https://cdn.jsdelivr.net/gh/xfy196/images@main/202308141514744.png)
+![Peek 2021-03-13 18-27.gif](https://static2.xxytime.top/2026/11/03/ec08daf7-4435-4f60-ba4c-3e70c1243e21.png)

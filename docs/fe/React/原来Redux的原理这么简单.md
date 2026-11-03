@@ -21,7 +21,7 @@ categories:
 - State 只读
 - 只能使用纯函数来执行修改
   **工作原理**
-  ![](https://cdn.jsdelivr.net/gh/xfy196/images@main/202308141354684.png)
+  ![](https://static2.xxytime.top/2026/11/03/bdbfb5da-99c7-470c-a266-f08ab2423952.png)
   从图片中我们可以看到，Redux 的工作原理`Action Creators`通过派发方法`dispatch` ,然后派发的`action`会被`Reducer`层拿到进行处理，最后行成新的`Store`数据，最后被`React Component绑定`， 页面发生改变
 
 ### 声明 Store

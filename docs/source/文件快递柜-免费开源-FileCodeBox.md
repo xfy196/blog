@@ -121,4 +121,4 @@ docker官方镜像仓库网速较差，我们需要设置国内镜像服务：
 [体验demo](https://share.lanol.cn)
 
 如果需要源码的可以关注一下公众号，回复杰奇cms 领取，如果实在搞不定就联系博主吧
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-45-53-6d3e9c8982872e473335b7555c86d3ce-%E5%85%AC%E4%BC%97%E5%8F%B7-3ff56f.jpg)![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-46-02-6cb477bc19b8eb6ef1f3165c176c9922-%E5%BE%AE%E4%BF%A1%E5%8F%B7-9d9b97.jpg)
+![](https://static2.xxytime.top/2026/11/03/276292ea-d90f-46f1-abc0-921ffe6f8da9.jpg)![](https://static2.xxytime.top/2026/11/03/62701af1-a408-4044-b782-974f2292fec6.jpg)

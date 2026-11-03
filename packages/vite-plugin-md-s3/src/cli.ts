@@ -1,5 +1,6 @@
 import path from 'node:path'
 import { loadMdS3Options } from './config.js'
+import { loadEnvFiles } from './env.js'
 import { migrateMarkdownAssets } from './migrate.js'
 import type { MdS3Options } from './types.js'
 
@@ -64,6 +65,8 @@ function printHelp(): void {
   S3_SECRET_ACCESS_KEY / AWS_SECRET_ACCESS_KEY
   S3_ENDPOINT / S3_BUCKET / S3_REGION / S3_PUBLIC_BASE_URL
 
+  会自动加载项目根目录 .env / .env.local（不覆盖已有环境变量）
+
 示例:
   md-s3 migrate --dry-run
   md-s3 migrate --from-hosts oss.xxytime.top
@@ -87,6 +90,8 @@ async function main(): Promise<void> {
   }
 
   const root = path.resolve(parsed.root)
+  const envFiles = loadEnvFiles(root)
+
   const overrides: Partial<MdS3Options> & { dryRun?: boolean } = {
     dryRun: parsed.dryRun || undefined,
   }
@@ -105,7 +110,7 @@ async function main(): Promise<void> {
   })
 
   console.log(
-    `[md-s3] root=${options.root} includeDir=${options.includeDir} dryRun=${options.dryRun}`,
+    `[md-s3] root=${options.root} includeDir=${options.includeDir} dryRun=${options.dryRun}${envFiles.length ? ` env=${envFiles.join(',')}` : ''}`,
   )
 
   const result = await migrateMarkdownAssets(options)

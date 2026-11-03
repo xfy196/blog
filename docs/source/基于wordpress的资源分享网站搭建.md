@@ -32,7 +32,7 @@ categories:
 
 #### 第三步 安装宝塔面板
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F11-44-19-0401923ea5b53f6089d92b3dfc904726-20240625114418-c4145a.png)
+![](https://static2.xxytime.top/2026/11/03/6e24096e-b676-403a-a70d-b62fce7c49c5.png)
 
 我们需要下载三个软件 php, msysql, nginx,安装版本如下:
 
@@ -40,20 +40,20 @@ categories:
 
 ![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F13-38-30-71381b3fb268a67423811588d1bd466d-20240625133830-8b412e.png)
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F13-39-06-bdefd4039a777b803169acab15909a88-20240625133906-d3a164.png)
+![](https://static2.xxytime.top/2026/11/03/996ad308-6a15-481d-9494-2147af8f8042.png)
 
 安装稍微等几分钟
 
 安装完成后我们需要添加自己的网站站点,站点文件夹命名建议按照自己的域名命名
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F13-41-52-8f25dfccb94cda9a024fd54762b04d55-20240625134151-6c522f.png)
+![](https://static2.xxytime.top/2026/11/03/a68271ad-b3bc-4a3f-9f2e-900f78bb45fb.png)
 
 然后我们去wordpress官网下载最新的压缩包[wordpress](https://cn.wordpress.org/download/)
 
 #### 点击开始上传
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F13-48-55-0c88ef8f02ba61d268e16b998abcd708-20240625134854-db3c8b.png)
+![](https://static2.xxytime.top/2026/11/03/d83999e7-2d61-4873-a476-cdfe0e662e7c.png)
 上传解压然后记住一定把文件放在域名文件夹根目录，这时候我们需要回到网站设置一下我们域名的ssl证书了
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F13-50-42-3734bb22c183ae3c2debc9af20b582d0-20240625135041-fc5a62.png)
+![](https://static2.xxytime.top/2026/11/03/f8d1d965-7bfc-4704-9473-93648e9be04e.png)
 
 然后我们在浏览器上点击回车出现一下界面说明wordpress安装成功
 
@@ -63,21 +63,21 @@ categories:
 
 现在最火的主题就是子比主题
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F15-16-50-82050512f13214bd86b61a859eb0b4a6-20240625151648-0a8a62.png)
+![](https://static2.xxytime.top/2026/11/03/3d87ec9a-4bcc-4605-b0c9-0ce55b550ce9.png)
 
 确实看着好看但是不幸运的是这个主题是收费的而且价格还比较贵，建议大家手头宽裕还是购买正版的，如果是在不宽裕可以联系博主，博主可以给大家安排子比开心版
 
 #### 安装子比开心版
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F15-20-34-f0e5aab11d6405277c45b83bec8839cc-20240625152033-593e94.png)
+![](https://static2.xxytime.top/2026/11/03/a65b05e1-2341-4df9-8ef1-303ff6080112.png)
 
 安装授权好之后就是这个样子，现在我们需要创建一篇文章
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F15-33-42-a250b5ed56940e43adead1195db0815e-20240625153341-1dd6d1.png)
+![](https://static2.xxytime.top/2026/11/03/9cfa7779-21b1-4fd2-b562-8e423c48fe28.png)
 
 现在我们的文章管理中就可以配置资源下载的功能，可以自己定义价格和下载链接
 
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F06%2F25%2F15-39-39-dcff3c20a60164daf5c85d2c743e0c45-20240625153938-685b5a.png)
+![](https://static2.xxytime.top/2026/11/03/5067ea3d-2f2f-4af8-96a7-10080d1466df.png)
 
 上面的展示是我自己配置好支付宝当面付的效果，大家如果需要开启支付功能只需要在后台配置一下支付配置即可，如果想要快速就直接用虎皮椒
 
@@ -97,5 +97,5 @@ categories:
 如果有基础的，自己可以上手实操，如果基础比较薄弱，可以私聊博主，我已经把相关的代码和安装环境已经准备好了直接按照步骤安装即可。
 
 如果需要源码的可以关注一下公众号，如果实在搞不定就联系博主吧
-![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-45-53-6d3e9c8982872e473335b7555c86d3ce-%E5%85%AC%E4%BC%97%E5%8F%B7-3ff56f.jpg)![](https://cdn.jsdelivr.net/gh/xfy196/images@main/2024%2F04%2F16%2F19-46-02-6cb477bc19b8eb6ef1f3165c176c9922-%E5%BE%AE%E4%BF%A1%E5%8F%B7-9d9b97.jpg)
+![](https://static2.xxytime.top/2026/11/03/276292ea-d90f-46f1-abc0-921ffe6f8da9.jpg)![](https://static2.xxytime.top/2026/11/03/62701af1-a408-4044-b782-974f2292fec6.jpg)
 雨云id:297823
